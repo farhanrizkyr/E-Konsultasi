@@ -17,10 +17,10 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             
-            $table->string('komentar_pasien')->nullable();
+            $table->longText('komentar_pasien')->nullable();
             $table->ForeignIDFor(User::class);
            $table->string('status')->default ('belum');
-            $table->string('komentar_konsultan')->nullable();
+            $table->longtext('komentar_konsultan')->nullable();
             $table->string('waktu_awal');
             $table->string('waktu_akhir');
             $table->timestamps();

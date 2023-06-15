@@ -16,10 +16,10 @@ return new class extends Migration
         Schema::create('konsultasis', function (Blueprint $table) {
             $table->id();
             $table->string('judul');
-            $table->string('komentar_pasien')->nullable();
+            $table->longtext('komentar_pasien')->nullable();
             $table->ForeignIDFor(User::class);
-           $table->string('status')->default ('belum');
-            $table->string('komentar_konsultan')->nullable();
+            $table->string('status')->default ('belum');
+            $table->longtext('komentar_konsultan')->nullable();
             $table->timestamps();
         });
     }

@@ -77,7 +77,7 @@
 								<button onclick="return confirm('Yakin Ingin Menghapus?')" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> Delete</button>
 							</form>
 							
-								<a href="/pasien/edit-jadwal/{{$data->id}}" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Pengajuan Ulang</a>
+								<a href="/pasien/edit-jadwal/{{$data->id}}"class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Pengajuan Ulang</a>
 						
 						@endif
 
@@ -89,7 +89,7 @@
 								<button onclick="return confirm('Yakin Ingin Menghapus?')" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> Delete</button>
 							</form>
 							
-								<a href="/pasien/edit-jadwal/{{$data->id}}" class="btn btn-info btn-sm"><i class="fas fa-edit"></i> Ubah Pengajuan</a>
+								<a href="/pasien/edit-jadwal/{{$data->id}}"class="btn btn-info btn-sm"><i class="fas fa-edit"></i> Ubah Pengajuan</a>
 							
 						@endif
 					</td>

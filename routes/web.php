@@ -10,6 +10,8 @@ use App\Http\Controllers\pasien\JadwalController;
 use App\Http\Controllers\Konsultan\ListKonsultasiKonsultanController;
 use App\Http\Controllers\Konsultan\ListJadwalKonsultanController;
 use App\Http\Controllers\Admin\UserAdminController;
+use App\Http\Controllers\Pasien\UserPasienController;
+use App\Http\Controllers\Konsultan\UserKonsultanController;
 use App\Http\Controllers\Admin\ChangePasswordAdminController;
 use App\Http\Controllers\Konsultan\ChangePasswordKonsultanController;
 use App\Http\Controllers\Pasien\ChangePasswordPasienController;
@@ -67,9 +69,9 @@ Route::get('/admin/setting',[UserAdminController::class,'index']);
 Route::get('/change-user/{username}',[UserAdminController::class,'edit']);
 Route::post('/proses-change-user/{id}',[UserAdminController::class,'store']);
 //======================SettingUserKonsultan==========================//
-Route::get('/konsultan/setting',[UserAdminController::class,'index']);
-Route::get('/change-user/{username}',[UserAdminController::class,'edit']);
-Route::post('/proses-change-user/{id}',[UserAdminController::class,'store']);
+Route::get('/konsultan/setting',[UserKonsultanController::class,'index']);
+Route::get('/change-user/{username}',[UserKonsultanController::class,'edit']);
+Route::post('/proses-change-user/{id}',[UserKonsultanController::class,'store']);
 //======================PasswordUserAdmin==========================//
 Route::get('/admin/password',[ChangePasswordAdminController::class,'index']);
 Route::post('/admin/password',[ChangePasswordAdminController::class,'store']);
@@ -79,3 +81,7 @@ Route::post('/konsultan/password',[ChangePasswordKonsultanController::class,'sto
 //======================PasswordPasien==========================//
 Route::get('/pasien/password',[ChangePasswordPasienController::class,'index']);
 Route::post('/pasien/password',[ChangePasswordPasienController::class,'store']);
+//======================SettingUserPasien==========================//
+Route::get('/pasien/setting',[UserPasienController::class,'index']);
+Route::get('/change-user/{username}',[UserPasienController::class,'edit']);
+Route::post('/proses-change-user/{id}',[UserPasienController::class,'store']);

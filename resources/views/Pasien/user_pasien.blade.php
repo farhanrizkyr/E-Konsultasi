@@ -1,5 +1,4 @@
-
-extends('master.tampilan')
+@extends('master.tampilan')
 
 @section('title','Setting User')
 

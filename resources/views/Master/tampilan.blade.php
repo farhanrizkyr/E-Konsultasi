@@ -83,7 +83,7 @@
             @endif
 
              @if(Auth::user()->role=='konsultan')
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="/konsultan/setting">
                   <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                   Profile
                 </a>
@@ -192,6 +192,7 @@
 <script>
 CKEDITOR.replace( 'editor1' );
 CKEDITOR.replace( 'editor2' );
+CKEDITOR.replace( 'editor3' );
  </script>
  <script >
    $(document).ready( function () {
