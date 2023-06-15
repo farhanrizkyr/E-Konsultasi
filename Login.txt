@@ -1,0 +1,15 @@
+Admin
+
+uername:aan
+password:aan
+
+Konsultan
+
+uername:farhan
+password:farhan
+
+Pasien
+
+uername:farhans
+password:farhans
+
